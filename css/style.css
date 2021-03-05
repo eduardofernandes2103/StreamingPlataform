@@ -68,7 +68,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	h3{
 		color: var(--color-secundary);
 	}
-	img:hover:not(.addPerfilImg){
+	img:hover:not(.addPerfilImg, .otherImg){
 		color: var(--color-words);
 		border: solid;
 		border-color: var(--color-border1);
@@ -78,6 +78,13 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 	.addPerfilImg{
 		border: none;
+		width: 110px;
+	}
+	.addPerfilFigure{
+		margin-top: 60px;
+	}
+	.addPerfil h3{
+		margin-top: 60px;
 	}
 	button{
 		background-color: var(--color-background);
