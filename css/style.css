@@ -30,6 +30,12 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		background-color: var(--color-background);
 	}
+	.pg-home{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-basis: 25%;
+	}
 	h2{
 		color: var(--color-words);
 		text-align: center;
@@ -40,7 +46,16 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-
+		flex-basis: 25%;
+		margin-right: 0;
+		padding-left: 0;
+	}
+	li{
+		display: flex;
+		text-align: center;
+	}
+	li:hover h3{
+		color: var(--color-words);
 	}
 	img{
 		width: 186px;
@@ -53,13 +68,15 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	h3{
 		color: var(--color-secundary);
 	}
-	img:hover{
+	img:hover:not(.addPerfilImg){
 		color: var(--color-words);
 		border: solid;
 		border-color: var(--color-border1);
 	}
-
 	.otherImg{
+		border: none;
+	}
+	.addPerfilImg{
 		border: none;
 	}
 	button{
