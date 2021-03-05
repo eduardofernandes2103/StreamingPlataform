@@ -7,7 +7,7 @@ Version: 1.0
 --------------------------------------------
 SUGESTÃO DE ESTRUTURAÇÃO BASE 
 --------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
+**** DECLARAÇÃO DE VARIÁVEIS -> ok!
 **** BODY
 **** TOPO
 **** RODAPÉ
@@ -16,21 +16,82 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+	--color-background: #141414;
+	--color-words: #dedede;
+	--color-secundary: #707070;
+	--color-border1: #dedede;
+	--color-border2: #707070;
+	--size-avatar: 186px;
+	--size-box: 858px;
 }
 
 /*BODY*/
 	body{
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		background-color: var(--color-background);
+	}
+	h2{
+		color: var(--color-words);
+		text-align: center;
+		font-size: 48px;
+	}
+	ul{
+		width: 858px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 
 	}
+	img{
+		width: 186px;
+		border: solid;
+		border-color: var(--color-border2);
+	}
+	figcaption{
+		color: var(--color-background);
+	}
+	h3{
+		color: var(--color-secundary);
+	}
+	img:hover{
+		color: var(--color-words);
+		border: solid;
+		border-color: var(--color-border1);
+	}
+
+	.otherImg{
+		border: none;
+	}
+	button{
+		background-color: var(--color-background);
+		color:  var(--color-secundary);
+		width: 200px;
+		height: 30px;
+		margin: 0;
+		font-size: 20px;
+		border: solid 1px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	button:hover{
+		border-color: var(--color-border1);
+		color: var(--color-words);
+	}	
 
 /*TOPO*/
 	header.topo{
-		
+		height: 10%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
 	}
 
 /*RODAPÉ*/
-	
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;	
+		align-items: center;
+	}
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
