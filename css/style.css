@@ -42,23 +42,23 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		font-size: 48px;
 	}
 	ul{
-		width: 858px;
+		width: 100%;
 		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 		flex-basis: 25%;
-		margin-right: 0;
 		padding-left: 0;
 	}
 	li{
 		display: flex;
 		text-align: center;
+		width: 186px;
 	}
 	li:hover h3{
 		color: var(--color-words);
 	}
 	img{
-		width: 186px;
+		width: 126px;
 		border: solid;
 		border-color: var(--color-border2);
 	}
@@ -81,10 +81,10 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		width: 110px;
 	}
 	.addPerfilFigure{
-		margin-top: 60px;
+		margin-top: 30px;
 	}
 	.addPerfil h3{
-		margin-top: 60px;
+		margin-top: 30px;
 	}
 	button{
 		background-color: var(--color-background);
@@ -106,7 +106,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		height: 10%;
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: center;
 	}
 
 /*RODAPÉ*/
@@ -122,3 +122,22 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		
 	}
 
+
+@media (min-width: 581px){
+	header.topo{
+		height: 10%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	ul{
+		width: 858px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-basis: 25%;
+		margin-right: 0;
+		padding-left: 0;
+	}
+}
